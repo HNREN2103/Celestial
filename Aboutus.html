@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About US!</title>
+        <link rel="stylesheet" href="about.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body style='background-image: url("Starsinthesky.jpg");'>
+        
+       
+        <nav>
+            <div class="menu-icon">
+      <span class="fas fa-bars"></span></div>
+      <div class="logo">
+      <a href="home.html"><img src="logo.png" alt="logo" > </a></div>
+      <div class="nav-items">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="spacecrafts.html">Services</a></li>
+      <li><a href="Aboutus.html">About</a></li>
+      
+      
+      </div>
+      <div class="search-icon">
+      <span class="fas fa-search"></span></div>
+      <div class="cancel-icon">
+      <span class="fas fa-times"></span></div>
+      <form action="#">
+              <input type="search" class="search-data" placeholder="Search" required>
+              <button type="submit" class="fas fa-search"></button>
+            </form>
+      </nav>
+    
+        
+        <div id="aboutus">
+            <span ><a style="color:rgb(255, 255, 255);font-size: xxx-large; ">FOUNDER'S NOTE</a></span>
+
+         
+                <div  class="au" id="l1" >Celestial has been our long time dream. This enables all the space enthuasists of our planet earth to fulfill their dream of visiting their favourite planets.
+                All our spacecrafts are desingned and manufactured by world class scientists and engineers. We wish a very happy journey to all our Cname Passengers!!
+                <span class="tag">-SIMHA</span>
+            </div> 
+       
+
+            <div class="au" id="r1" >
+                <p>Space Travel!! One of the most fascinating things to dream about is now. We here at Celestial made it possible for all those
+                dreamers with this amazing oppurtunity of space travel. This is a dream come true for not only us but all those space 
+                enthusiasts who have dreamed nothing but to travel in space. HAPPY SPACE JOURNEY!!!!</p>
+                <span class="tag">-HN</span>
+            </div>
+      
+        
+            <div class="au" id="l2">
+                <p>So after years of hardwork from engineers, physicists around the globe we've made possible to give you an amazing 
+                opportunity to explore space. As a child to upto now all your imagination of moon and different galaxies. All of them
+                can be fulfilled by our spacecrafts with our finest pilots for the exciting journey to explore with us. GEAR UP!!</p>
+                <span class="tag">-THAMAN</span>
+            </div>  
+
+            <div class="au" id="r2">
+                <p>Moonlight stories, stories on galaxies have always been a part of my childhood. Like every other child I too was crazy 
+                about planets. Today I find myself a co-founder of Celestial making dreams of many individuals like mine 
+                come true.</p>
+                <span class="tag">-ASHISH</span>
+            </div>
+        
+
+            <div class="au" id="l3">
+                <P>From early astronomers like Galilieo to Aryabhatta, evreyone was curious about perplexities of space. From the inspiration
+                of such great scholars, a space geek inside me always wanted to see space travel come into existence.Witha team of great 
+                minds at Celestial, we have achieved this prodigous feat.</P>
+                <span class="tag">-SAM</span> 
+            </div>
+
+            <div class="au" id="r3">
+                <p>I as co-founder of Celestial would say that this will be a golden opportunity for people to experience a new life in the
+                habitable zone in space with everything you would ever need. Our team has been working for many years to make space dream
+                come true for all everyone. ENJOY!!</p>
+                <span class="tag">-D.SUJAY</span>
+            </div>
+        
+        
+        <!--SOCIAL MEDIA HANDLES
+            SIMAH"S CODE FOR SOCIAL MEDIA HANDLES
+        
+        -->
+
+        <script>
+            const menuBtn = document.querySelector(".menu-icon span");
+            const searchBtn = document.querySelector(".search-icon");
+            const cancelBtn = document.querySelector(".cancel-icon");
+            const items = document.querySelector(".nav-items");
+            const form = document.querySelector("form");
+            menuBtn.onclick = ()=>{
+              items.classList.add("active");
+              menuBtn.classList.add("hide");
+              searchBtn.classList.add("hide");
+              cancelBtn.classList.add("show");
+            }
+            cancelBtn.onclick = ()=>{
+              items.classList.remove("active");
+              menuBtn.classList.remove("hide");
+              searchBtn.classList.remove("hide");
+              cancelBtn.classList.remove("show");
+              form.classList.remove("active");
+              cancelBtn.style.color = "#ff3d00";
+            }
+            searchBtn.onclick = ()=>{
+              form.classList.add("active");
+              searchBtn.classList.add("hide");
+              cancelBtn.classList.add("show");
+            }
+          </script>
+        
+        
+    </body>
+</html>

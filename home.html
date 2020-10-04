@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  </head>
+  <body>
+    <nav>
+      <div class="menu-icon">
+<span class="fas fa-bars"></span></div>
+<div class="logo">
+    <a href="home.html"><img src="logo.png" alt="logo" > </a></div>
+<div class="nav-items">
+<li><a href="home.html">Home</a></li>
+<li><a href="spacecrafts.html">Services</a></li>
+<li><a href="Aboutus.html">About</a></li>
+
+
+</div>
+<div class="search-icon">
+<span class="fas fa-search"></span></div>
+<div class="cancel-icon">
+<span class="fas fa-times"></span></div>
+<form action="#">
+        <input type="search" class="search-data" placeholder="Search" required>
+        <button type="submit" class="fas fa-search"></button>
+      </form>
+</nav>
+
+  <div class="slideshow">
+    <div class="slideshow-item">
+        <img src="space2.jpg" alt="">
+        <div class="slideshow-item-text">
+            <h5>Welcome</h5>
+            <p>Hey there!
+                Want to explore picturesque locations outside earth? Curious to check the scenic outer space and other galaxies? Eager to see the other infernos that exist outside the Milky Way Galaxy? We, at The Celestial  make space travel a reality. Check out our websites for future missions. </p>
+        </div>
+    </div>
+
+    <div class="slideshow-item">
+        <img src="space1.jpg" alt="">
+        <div class="slideshow-item-text">
+            <h5>Destiny</h5>
+            <p>One of our finest and most and supreme spacecraft to start your space exploration. Destiny is our prime spacecraft that takes you to the outer space and experience space.
+              Destiny is a service in which all the passengers get to rotate along with the earth for 24 hrs.
+              
+               </p>
+        </div>
+    </div>
+
+    <div class="slideshow-item">
+        <img src="space3.jpg" alt="">
+        <div class="slideshow-item-text">
+            <h5>Space</h5>
+            <p>Space is a beautiful place ,Where the understanding of its nature is beyond the limit. 
+              Grab a chance to enjoy this natural phenomena. </p>
+        </div>
+    </div>
+  </div>
+
+
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="left-col">
+        <img src="logo.png" alt="" class="logo1">
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p class="rights-text">© 2020 Created By star wars All Rights Reserved.</p>
+      </div>
+
+      <div class="right-col">
+        <h1>Contact Us</h1>
+        <div class="border"></div>
+        <p class="rights-text"> Enter Your Email to contact us.</p>
+        <form action="" class="newsletter-form">
+          <input type="text" class="txtb" placeholder="Enter Your Email">
+          <input type="submit" class="btn" value="submit">
+        </form>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+<script>
+    const menuBtn = document.querySelector(".menu-icon span");
+    const searchBtn = document.querySelector(".search-icon");
+    const cancelBtn = document.querySelector(".cancel-icon");
+    const items = document.querySelector(".nav-items");
+    const form = document.querySelector("form");
+    menuBtn.onclick = ()=>{
+      items.classList.add("active");
+      menuBtn.classList.add("hide");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+    cancelBtn.onclick = ()=>{
+      items.classList.remove("active");
+      menuBtn.classList.remove("hide");
+      searchBtn.classList.remove("hide");
+      cancelBtn.classList.remove("show");
+      form.classList.remove("active");
+      cancelBtn.style.color = "#ff3d00";
+    }
+    searchBtn.onclick = ()=>{
+      form.classList.add("active");
+      searchBtn.classList.add("hide");
+      cancelBtn.classList.add("show");
+    }
+
+
+
+
+    
+  </script>
+
+  </body>
+</html>
